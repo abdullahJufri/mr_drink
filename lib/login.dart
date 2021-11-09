@@ -8,7 +8,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  late String value;
+   String value = '';
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,7 @@ class _LoginState extends State<Login> {
                     //       );
                     //     });
                   },
-                  child: Text('Submit'),
+                  child: Text('Login'),
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFFF17532),
 

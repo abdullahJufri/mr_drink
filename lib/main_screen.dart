@@ -32,13 +32,6 @@ class _MainScreenState extends State<MainScreen>
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Color(0xFF545D68),
-          ),
-          onPressed: () {},
-        ),
         title: Text(
           'Mr Drink',
           style: TextStyle(
@@ -106,8 +99,14 @@ class _MainScreenState extends State<MainScreen>
                     gridCount: 2,
                     add: false,
                   ),
-                  DrinkPage(),
-                  DrinkPage(),
+                  DrinkList(
+                    gridCount: 2,
+                    add: false,
+                  ),
+                  DrinkList(
+                    gridCount: 2,
+                    add: false,
+                  ),
                 ],
               ),
             ),

@@ -14,61 +14,43 @@ class DrinkData {
 
 var drinkDataList = [
   DrinkData(
-    name: 'thaitea',
+    name: 'ThaiTea',
     price: 'Rp 15.000',
     description:
-        'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
-  ),
-  DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
-    description:
-        'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
-  ),
-  DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
-    description:
-        'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
-  ),
-  DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
-    description:
-        'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
-  ),
-  DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
-    description:
-        'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
+        'Sama seperti namanya Thai Tea ini adalah varian teh yang berasal dari negeri gajah putih Thailand yang kini sudah mendunia dan bahkan jadi banyak sekali peminatnya. Dulunya sekitar tahun 1980’an, ada seorang pedagang dari China yang menyalurkan teh yang mejadi bahan baku Thai Tea yaitu Cha Yen Tea yang merupakan teh hitam atau black tea, namun karena harganya yang melambung, Cha Yen kemudian digantikan dengan seduhan teh Ceylon, teh hitam beraroma sangat pekat yang berasal dari Sri Lanka.',
     imageAsset: 'images/thaitea.png',
   ),
 
   DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
+    name: 'Black Oreo',
+    price: 'Rp 19.000',
     description:
-    'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
+    'Black Oreo merupakan olahan minuman dingin berbahan susu cair, whipped cream, biskuit oreo, es batu, dan juga susu kental manis. Rasanya manis, creamy, dan segar. Cara pembuatannya sangat mudah dan tampilannya mirip dengan minuman di restoran atau cafe.',
+    imageAsset: 'images/black_oreo.png',
   ),
 
   DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
+    name: 'Boba Fresh Milk',
+    price: 'Rp 21.000',
     description:
-    'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
+    ' Bubble tea merupakan minuman yang tengah naik daun karena rasanya yang manis, creamy berpadu dengan tekstur boba yang kenyal. Boba berbahan dasar tepung tapioka yaitu tepung dari singkong.',
+    imageAsset: 'images/black_oreo.png',
   ),
+
   DrinkData(
-    name: 'thaitea',
-    price: 'Rp 15.000',
+    name: 'Grape Yakult',
+    price: 'Rp 16.000',
     description:
-    'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
-    imageAsset: 'images/thaitea.png',
+    'Yakult adalah suplemen makanan berbentuk minuman probiotik. Yakult mengandung bakteri baik Lactobacillus casei shirota strain, yang biasanya juga hidup secara alami dalam usus manusia. Kini hadir dengan rasa anggur yang segar. ',
+    imageAsset: 'images/grape_yakult.png',
   ),
+
+  DrinkData(
+    name: 'Lychee Yakult',
+    price: 'Rp 16.000',
+    description:
+    'Yakult adalah suplemen makanan berbentuk minuman probiotik. Yakult mengandung bakteri baik Lactobacillus casei shirota strain, yang biasanya juga hidup secara alami dalam usus manusia. Kini hadir dengan rasa leci yang segar. ',
+    imageAsset: 'images/lychee_yakult.png',
+  ),
+
 ];

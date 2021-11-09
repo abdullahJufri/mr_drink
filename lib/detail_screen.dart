@@ -44,10 +44,10 @@ class DrinkDetail extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 20.0),
               child: Text(
-                  'MR. DRINK',
+                  place.name,
                   style: TextStyle(
                       fontFamily: 'Varela',
-                      fontSize: 42.0,
+                      fontSize: 35.0,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFFF17532))
               ),
@@ -70,13 +70,13 @@ class DrinkDetail extends StatelessWidget {
                       color: Color(0xFFF17532))),
             ),
             SizedBox(height: 10.0),
-            Center(
-              child: Text(place.name,
-                  style: TextStyle(
-                      color: Color(0xFF575E67),
-                      fontFamily: 'Varela',
-                      fontSize: 24.0)),
-            ),
+            // Center(
+            //   child: Text(place.name,
+            //       style: TextStyle(
+            //           color: Color(0xFF575E67),
+            //           fontFamily: 'Varela',
+            //           fontSize: 24.0)),
+            // ),
             SizedBox(height: 20.0),
             Center(
               child: Container(
