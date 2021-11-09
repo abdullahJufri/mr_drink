@@ -4,7 +4,8 @@ import 'model/drink_data.dart';
 
 
 class DrinkDetail extends StatelessWidget {
-  late final DrinkData place;
+  final DrinkData place;
+  const DrinkDetail({required this.place});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,9 @@ class DrinkDetail extends StatelessWidget {
             Icons.arrow_back,
             color: Color(0xFF545D68),
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         title: Text(
           'Mr Drink',
@@ -41,7 +44,7 @@ class DrinkDetail extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 20.0),
               child: Text(
-                  'Cookie',
+                  'MR. DRINK',
                   style: TextStyle(
                       fontFamily: 'Varela',
                       fontSize: 42.0,
@@ -50,12 +53,11 @@ class DrinkDetail extends StatelessWidget {
               ),
             ),
             SizedBox(height: 15.0),
-            Hero(
-                tag: null,
+            Center(
                 child: Image.asset(place.imageAsset,
-                    height: 150.0,
-                    width: 100.0,
-                    fit: BoxFit.contain
+                    height: 200.0,
+                    width: 150.0,
+                    fit: BoxFit.fitHeight
                 )
             ),
             SizedBox(height: 20.0),
@@ -79,7 +81,7 @@ class DrinkDetail extends StatelessWidget {
             Center(
               child: Container(
                 width: MediaQuery.of(context).size.width - 50.0,
-                child: Text('Cold, creamy ice cream sandwiched between delicious deluxe cookies. Pick your favorite deluxe cookies and ice cream flavor.',
+                child: Text(place.description,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontFamily: 'Varela',

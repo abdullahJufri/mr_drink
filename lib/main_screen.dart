@@ -137,11 +137,11 @@ class DrinkList extends StatelessWidget {
           childAspectRatio: 0.8,
           children: drinkDataList.map((place) {
             return InkWell(
-              // onTap: () {
-              //   Navigator.push(context, MaterialPageRoute(builder: (context) {
-              //     return DrinkDetail(place: place);
-              //   }));
-              // },
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return DrinkDetail(place: place);
+                }));
+              },
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15.0),
