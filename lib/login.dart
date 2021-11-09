@@ -8,7 +8,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-   String value = '';
+  String value = '';
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,8 @@ class _LoginState extends State<Login> {
               Container(
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
                       return MainScreen(value: value);
                     }));
 
@@ -66,10 +67,8 @@ class _LoginState extends State<Login> {
                   child: Text('Login'),
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFFF17532),
-
                   ),
                 ),
-
               )
             ],
           ),

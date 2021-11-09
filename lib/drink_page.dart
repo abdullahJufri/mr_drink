@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mr_drink/model/drink_data.dart';
 
 class DrinkPage extends StatelessWidget {
   @override
@@ -8,7 +7,9 @@ class DrinkPage extends StatelessWidget {
       backgroundColor: Color(0xFFCFAF8),
       body: ListView(
         children: <Widget>[
-          SizedBox(height: 15.0,),
+          SizedBox(
+            height: 15.0,
+          ),
           Container(
             padding: EdgeInsets.only(right: 15.0),
             width: MediaQuery.of(context).size.width - 30.0,
@@ -19,15 +20,11 @@ class DrinkPage extends StatelessWidget {
               crossAxisSpacing: 10.0,
               mainAxisSpacing: 15.0,
               childAspectRatio: 0.8,
-              children: <Widget>[
-              ],
+              children: <Widget>[],
             ),
           )
-
         ],
       ),
-
     );
   }
 }
-

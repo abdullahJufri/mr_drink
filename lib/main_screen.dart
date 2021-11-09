@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mr_drink/drink_page.dart';
 
 import 'detail_screen.dart';
 import 'model/drink_data.dart';
 
 class MainScreen extends StatefulWidget {
   String value;
+
   MainScreen({required this.value});
 
   @override
@@ -15,9 +15,10 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen>
     with SingleTickerProviderStateMixin {
   String value;
-  _MainScreenState(this.value);
-  late TabController _tabController;
 
+  _MainScreenState(this.value);
+
+  late TabController _tabController;
 
   @override
   void initState() {
@@ -54,9 +55,7 @@ class _MainScreenState extends State<MainScreen>
             height: 15.0,
           ),
           Text('Welcome ${value} :)',
-              style: TextStyle(
-                  fontFamily: 'Varela',
-                  fontSize: 18.0)),
+              style: TextStyle(fontFamily: 'Varela', fontSize: 18.0)),
           Text('Categories',
               style: TextStyle(
                   fontFamily: 'Varela',
@@ -90,7 +89,7 @@ class _MainScreenState extends State<MainScreen>
           Padding(
             padding: const EdgeInsets.only(right: 16.0),
             child: Container(
-              height: MediaQuery.of(context).size.height -30,
+              height: MediaQuery.of(context).size.height - 30,
               width: double.infinity,
               child: TabBarView(
                 controller: _tabController,
@@ -126,7 +125,6 @@ class _MainScreenState extends State<MainScreen>
 class DrinkList extends StatelessWidget {
   final int gridCount;
   final bool add;
-
 
   DrinkList({
     required this.gridCount,
@@ -297,7 +295,8 @@ class _AddButtonState extends State<AddButton> {
                     color: Color(0xFFD17E50),
                     fontWeight: FontWeight.bold,
                     fontSize: 15.0)),
-            Icon(Icons.add_circle_outline, color: Color(0xFFD17E50), size: 15.0),
+            Icon(Icons.add_circle_outline,
+                color: Color(0xFFD17E50), size: 15.0),
           ]
         ],
       ),
