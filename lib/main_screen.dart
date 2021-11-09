@@ -5,13 +5,19 @@ import 'detail_screen.dart';
 import 'model/drink_data.dart';
 
 class MainScreen extends StatefulWidget {
+  String value;
+  MainScreen({required this.value});
+
   @override
-  _MainScreenState createState() => _MainScreenState();
+  _MainScreenState createState() => _MainScreenState(value);
 }
 
 class _MainScreenState extends State<MainScreen>
     with SingleTickerProviderStateMixin {
+  String value;
+  _MainScreenState(this.value);
   late TabController _tabController;
+
 
   @override
   void initState() {
@@ -54,6 +60,10 @@ class _MainScreenState extends State<MainScreen>
           SizedBox(
             height: 15.0,
           ),
+          Text('Welcome ${value} :)',
+              style: TextStyle(
+                  fontFamily: 'Varela',
+                  fontSize: 18.0)),
           Text('Categories',
               style: TextStyle(
                   fontFamily: 'Varela',

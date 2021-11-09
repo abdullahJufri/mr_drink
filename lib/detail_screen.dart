@@ -92,23 +92,26 @@ class DrinkDetail extends StatelessWidget {
             ),
             SizedBox(height: 20.0),
             Center(
-                child: Container(
-                    width: MediaQuery.of(context).size.width - 50.0,
-                    height: 50.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(25.0),
-                        color: Color(0xFFF17532)
-                    ),
-                    child: Center(
-                        child: Text('Add to cart',
-                          style: TextStyle(
-                              fontFamily: 'Varela',
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white
-                          ),
-                        )
-                    )
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 16.0),
+                  child: Container(
+                      width: MediaQuery.of(context).size.width - 50.0,
+                      height: 50.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25.0),
+                          color: Color(0xFFF17532)
+                      ),
+                      child: Center(
+                          child: Text('Add to cart',
+                            style: TextStyle(
+                                fontFamily: 'Varela',
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white
+                            ),
+                          )
+                      )
+                  ),
                 )
             )
           ]

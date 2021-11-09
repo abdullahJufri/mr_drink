@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mr_drink/main_screen.dart';
+import 'package:mr_drink/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wisata Bandung',
       theme: ThemeData(),
-      home: MainScreen(),
+      home: Login(),
+      // home: MainScreen()
     );
   }
 }
